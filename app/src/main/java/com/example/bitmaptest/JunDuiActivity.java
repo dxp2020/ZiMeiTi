@@ -35,7 +35,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 援朝战场上的十大王牌军，都是来自志愿军哪个兵团，军长又是谁
+ * 抗美援朝战场上的十大王牌军，你知道都是来自志愿军哪个兵团？
  */
 public class JunDuiActivity extends Activity {
 
@@ -147,12 +147,13 @@ public class JunDuiActivity extends Activity {
                 tv_name.setText(data[0]);
                 tv_desc.setText(data[4]);
                 tv_address.setText(data[2]);
-                iv_icon.setImageResource(getImageResource(index));
+                iv_icon.setImageResource(getImageResource(data[0].substring(0, data[0].length() - 1)));
 
 
-                new Thread(() -> savePicture("/mnt/sdcard/dxp2020/" + index + ".png")).start();
+                new Thread(() -> savePicture("/mnt/sdcard/dxp2020/a" + data[0].substring(0, data[0].length() - 1) + ".png")).start();
             } else if (msg.what == 1) {
-                tv_fengmian.setText("不朽中华魂!");
+                tv_fengmian.setText("求关注!");
+                tv_fengmian.setEms(1);
                 new Thread(() -> {
                     try {
                         Thread.sleep(2000l);
@@ -184,7 +185,7 @@ public class JunDuiActivity extends Activity {
         }
     };
 
-    private int getImageResource(int id) {
+    private int getImageResource(String id) {
         String imgName = "a" + id;
         return getResources().getIdentifier(imgName, "mipmap", getPackageName());
     }
