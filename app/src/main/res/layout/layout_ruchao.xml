@@ -14,9 +14,9 @@
         android:gravity="center"
         android:paddingLeft="50px"
         android:paddingRight="50px"
-        android:text="抗美援朝的第一批入朝的军是哪几个？"
+        android:text="打得一拳开，免得百拳来，1950年第一批入朝的军队有哪几支？"
         android:textColor="#FFFFFF"
-        android:textSize="110px"
+        android:textSize="100px"
         android:typeface="monospace"
         android:visibility="gone" />
 
