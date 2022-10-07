@@ -35,7 +35,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 抗美援朝的第一批入朝的军是哪几个？
+ * 1950年，志愿军首批入朝的6个军中，哪个军的兵力最多？
  */
 public class RuChaoActivity extends Activity {
 

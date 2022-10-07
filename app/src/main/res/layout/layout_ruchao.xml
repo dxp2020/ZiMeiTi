@@ -14,7 +14,7 @@
         android:gravity="center"
         android:paddingLeft="50px"
         android:paddingRight="50px"
-        android:text="抗美援朝的第一批入朝的军是哪几个？"
+        android:text="1950年，志愿军首批入朝的6个军中，哪个军的兵力最多"
         android:textColor="#FFFFFF"
         android:textSize="110px"
         android:typeface="monospace"

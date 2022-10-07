@@ -14,7 +14,7 @@
         android:gravity="center"
         android:paddingLeft="50px"
         android:paddingRight="50px"
-        android:text="中国十大特级战斗英雄,你都知道誰?"
+        android:text="中国十大特级战斗英雄,你知道几个?"
         android:textColor="#FFFFFF"
         android:textSize="110px"
         android:typeface="monospace"

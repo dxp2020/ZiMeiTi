@@ -152,7 +152,7 @@ public class ZhanDouActivity extends Activity {
 
                 new Thread(() -> savePicture("/mnt/sdcard/dxp2020/" + index + ".png")).start();
             } else if (msg.what == 1) {
-                tv_fengmian.setText("不朽中華魂!");
+                tv_fengmian.setText("求关注!");
                 new Thread(() -> {
                     try {
                         Thread.sleep(2000l);
