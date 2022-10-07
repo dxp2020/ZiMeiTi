@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="715px"
+        android:layout_height="1080px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="700px">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_zhangguofu" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:text="1"
+                android:textColor="#FD0201"
+                android:textSize="120px" />
+
+            <TextView
+                android:id="@+id/tv_war"
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30px"
+                android:layout_marginRight="30px"
+                android:background="@drawable/shape_grey"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="朝鲜战争"
+                android:textColor="#FFFFFF"
+                android:textSize="55px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tag"
+            android:layout_width="match_parent"
+            android:layout_height="135px"
+            android:layout_marginTop="670px"
+            android:background="@drawable/shape_tag">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="杨根思（1922-1950）"
+                android:textColor="#FBEA0A"
+                android:textSize="60px" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:layout_below="@+id/rl_tag"
+            android:background="#000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="安徽芜湖人"
+                android:textColor="#34E9E2"
+                android:textSize="60px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@drawable/shape_dash" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:paddingLeft="18px"
+                android:paddingRight="18px"
+                android:text="抱起炸药包冲向敌群，与敌人同归于尽，年仅28岁！"
+                android:textColor="#FFFFFF"
+                android:textSize="50px" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

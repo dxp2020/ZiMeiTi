@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="715px"
+        android:layout_height="1080px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="700px">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_zhangguofu" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginBottom="50px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:text="1"
+                android:textColor="#FD0201"
+                android:textSize="120px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tag"
+            android:layout_width="match_parent"
+            android:layout_height="135px"
+            android:layout_marginTop="670px"
+            android:background="@drawable/shape_tag">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:text="张国福"
+                android:textColor="#FBEA0A"
+                android:textSize="70px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="终年"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="60"
+                    android:textColor="#FBEA0A"
+                    android:textSize="70px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:text="岁"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50px" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:layout_below="@+id/rl_tag"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="安徽歙縣人"
+                android:textColor="#ECB21B"
+                android:textSize="60px" />
+
+
+            <TextView
+                android:id="@+id/tv_zi_zhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第5任校长"
+                android:textColor="#FC0108"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/tv_time_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="1920年9月~1922年4月"
+                android:textColor="#FFFFFF"
+                android:textSize="50px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
