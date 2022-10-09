@@ -17,7 +17,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="500px"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/a1" />
+                android:src="@mipmap/ic_zhangguofu" />
 
             <TextView
                 android:id="@+id/tv_name"
