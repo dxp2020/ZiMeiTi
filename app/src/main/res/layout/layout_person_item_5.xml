@@ -29,7 +29,7 @@
                 android:layout_marginTop="20px"
                 android:padding="5px"
                 android:text="1"
-                android:textColor="#9D3C1B"
+                android:textColor="#FFFFFF"
                 android:textSize="100px" />
 
             <TextView

@@ -2,7 +2,6 @@ package com.example.bitmaptest;
 
 import android.Manifest;
 import android.app.Activity;
-import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -35,7 +34,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 中国十大特级战斗英雄,你都知道誰?
+ * 新中国十大特级战斗英雄
  */
 public class ZhanDouActivity extends Activity {
 
@@ -46,15 +45,12 @@ public class ZhanDouActivity extends Activity {
     private FrameLayout v_bitmap_view;
     private Button btn_run;
     private Button btn_read;
-    private Button btn_feng_mian;
-    private TextView tv_fengmian;
     private List<String[]> list = new ArrayList<>();
     private int index;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_zhandou);
 
@@ -64,8 +60,6 @@ public class ZhanDouActivity extends Activity {
         v_bitmap_view = findViewById(R.id.v_bitmap_view);
         btn_run = findViewById(R.id.btn_run);
         btn_read = findViewById(R.id.btn_read);
-        btn_feng_mian = findViewById(R.id.btn_feng_mian);
-        tv_fengmian = findViewById(R.id.tv_fengmian);
 
         findViewById(R.id.btn_0).setOnClickListener(view -> {
             request();
@@ -80,9 +74,6 @@ public class ZhanDouActivity extends Activity {
         btn_3.setOnClickListener(view -> {
             handlerBtn3();
         });
-        btn_feng_mian.setOnClickListener(view -> {
-            handlerBtn4();
-        });
 
         btn_read.setOnClickListener(v -> {
             btn_run.setEnabled(true);
@@ -94,35 +85,6 @@ public class ZhanDouActivity extends Activity {
         btn_run.setOnClickListener(v -> {
             handlePic(v);
         });
-    }
-
-    private void handlerBtn4() {
-        v_bitmap_view.setVisibility(View.GONE);
-        tv_fengmian.setVisibility(View.VISIBLE);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        new Thread(() -> {
-            try {
-                Thread.sleep(2000l);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            Bitmap bitmap = createBitmapFromView(tv_fengmian);
-
-            File file = new File("/mnt/sdcard/dxp2020/0.png");
-            try {
-                FileOutputStream out = new FileOutputStream(file);
-                if (bitmap.compress(Bitmap.CompressFormat.PNG, 100, out)) {
-                    out.flush();
-                    out.close();
-                }
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            } finally {
-                handler.sendEmptyMessageDelayed(1, 500);
-            }
-        }).start();
     }
 
     private Handler handler = new Handler(Looper.getMainLooper()) {
@@ -139,47 +101,16 @@ public class ZhanDouActivity extends Activity {
                 TextView tv_war = v_bitmap_view.findViewById(R.id.tv_war);
                 TextView tv_name = v_bitmap_view.findViewById(R.id.tv_name);
                 TextView tv_desc = v_bitmap_view.findViewById(R.id.tv_desc);
-                TextView tv_address = v_bitmap_view.findViewById(R.id.tv_address);
                 ImageView iv_icon = v_bitmap_view.findViewById(R.id.iv_icon);
 
                 tv_num.setText(String.valueOf(index));
                 tv_war.setText(data[1]);
                 tv_name.setText(data[2]);
                 tv_desc.setText(data[3]);
-                tv_address.setText(data[4]);
                 iv_icon.setImageResource(getImageResource(index));
 
 
                 new Thread(() -> savePicture("/mnt/sdcard/dxp2020/" + index + ".png")).start();
-            } else if (msg.what == 1) {
-                tv_fengmian.setText("不朽中華魂!");
-                new Thread(() -> {
-                    try {
-                        Thread.sleep(2000l);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    Bitmap bitmap = createBitmapFromView(tv_fengmian);
-
-                    File file = new File("/mnt/sdcard/dxp2020/end.png");
-                    try {
-                        FileOutputStream out = new FileOutputStream(file);
-                        if (bitmap.compress(Bitmap.CompressFormat.PNG, 100, out)) {
-                            out.flush();
-                            out.close();
-                        }
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    } finally {
-                        handler.sendEmptyMessageDelayed(2, 500);
-                    }
-                }).start();
-            } else if (msg.what == 2) {
-                v_bitmap_view.setVisibility(View.VISIBLE);
-                tv_fengmian.setVisibility(View.GONE);
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
             }
         }
     };

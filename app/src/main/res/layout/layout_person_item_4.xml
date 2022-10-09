@@ -9,7 +9,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="700px">
+            android:layout_height="720px">
 
             <ImageView
                 android:id="@+id/iv_icon"
@@ -27,76 +27,88 @@
                 android:layout_marginTop="20px"
                 android:padding="5px"
                 android:text="1"
-                android:textColor="#FFFFFF"
+                android:textColor="#A40104"
                 android:textSize="100px" />
 
             <TextView
                 android:id="@+id/tv_chen_wei"
-                android:layout_width="100px"
+                android:layout_width="90px"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="20px"
                 android:layout_marginTop="60px"
+                android:layout_marginRight="20px"
                 android:background="@drawable/shape_red_circle"
                 android:gravity="center"
-                android:text="孤胆英雄"
+                android:text="第十三兵团"
                 android:textColor="#ffffff"
+                android:textSize="50px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tag"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_above="@+id/ll_tag"
+            android:background="@drawable/shape_tag">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="50军"
+                android:textColor="#FBEA0A"
                 android:textSize="60px" />
 
         </RelativeLayout>
 
         <LinearLayout
-            android:id="@+id/rl_bottom"
-            android:layout_width="match_parent"
-            android:layout_height="200px"
-            android:background="#000000"
-            android:gravity="center_horizontal"
-            android:layout_alignParentBottom="true"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_desc"
-                android:layout_width="wrap_content"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:gravity="left|center_vertical"
-                android:paddingLeft="15px"
-                android:paddingRight="15px"
-                android:text="全排战斗7天7夜后仅剩下他自己，他用石块阻击敌军，1人歼敌100余人。"
-                android:textColor="#FFFFFF"
-                android:textSize="50px" />
-
-        </LinearLayout>
-
-        <LinearLayout
             android:id="@+id/ll_tag"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/rl_bottom"
-            android:orientation="vertical"
-            >
-
-            <TextView
-                android:id="@+id/tv_name"
-                android:layout_width="match_parent"
-                android:layout_height="120px"
-                android:gravity="center"
-                android:text="赖永泽"
-                android:textColor="#FFFFFF"
-                android:textSize="70px"
-                android:background="#E3502E"
-                />
+            android:layout_alignParentBottom="true"
+            android:background="#000000"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_address"
                 android:layout_width="match_parent"
-                android:layout_height="120px"
+                android:layout_height="112px"
+                android:background="#000000"
                 android:gravity="center"
-                android:text="四川绵阳人"
-                android:textColor="#9D3C1B"
-                android:textSize="70px"
-                android:background="#E9D6DC"
-                />
+                android:paddingLeft="20px"
+                android:text="军长:曾泽生"
+                android:textColor="#34E9E2"
+                android:textSize="60px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@drawable/shape_dash" />
+
+            <LinearLayout
+                android:id="@+id/rl_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="210px"
+                android:layout_alignParentBottom="true"
+                android:background="#000000"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:text="在铁原阻击战中粉碎了美军企图摧毁志愿军后方基地和交通线的企图"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50px" />
+
+            </LinearLayout>
 
         </LinearLayout>
 

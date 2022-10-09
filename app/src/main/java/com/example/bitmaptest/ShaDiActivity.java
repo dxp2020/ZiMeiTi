@@ -98,7 +98,6 @@ public class ShaDiActivity extends Activity {
     private void handlerBtn4() {
         v_bitmap_view.setVisibility(View.GONE);
         tv_fengmian.setVisibility(View.VISIBLE);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         new Thread(() -> {
             try {
                 Thread.sleep(2000l);
@@ -151,7 +150,7 @@ public class ShaDiActivity extends Activity {
 
                 new Thread(() -> savePicture("/mnt/sdcard/dxp2020/" + index + ".png")).start();
             } else if (msg.what == 1) {
-                tv_fengmian.setText("不朽中華魂!");
+                tv_fengmian.setText("不朽中华魂!");
                 new Thread(() -> {
                     try {
                         Thread.sleep(2000l);
@@ -178,7 +177,6 @@ public class ShaDiActivity extends Activity {
             } else if (msg.what == 2) {
                 v_bitmap_view.setVisibility(View.VISIBLE);
                 tv_fengmian.setVisibility(View.GONE);
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
             }
         }
     };

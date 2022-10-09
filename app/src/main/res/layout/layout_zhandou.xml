@@ -5,21 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_fengmian"
-        android:layout_width="715px"
-        android:layout_height="1080px"
-        android:layout_centerInParent="true"
-        android:background="#000000"
-        android:gravity="center"
-        android:paddingLeft="50px"
-        android:paddingRight="50px"
-        android:text="中国十大特级战斗英雄,你都知道誰?"
-        android:textColor="#FFFFFF"
-        android:textSize="110px"
-        android:typeface="monospace"
-        android:visibility="gone" />
-
     <Button
         android:id="@+id/btn_0"
         android:layout_width="wrap_content"
@@ -30,8 +15,9 @@
         android:id="@+id/btn_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="透明图"
         android:layout_below="@+id/btn_0"
-        android:text="透明图" />
+        />
 
     <Button
         android:id="@+id/btn_2"
@@ -39,8 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_toEndOf="@+id/btn_1"
-        android:layout_toRightOf="@+id/btn_1"
-        android:text="间隔透明" />
+        android:text="间隔透明"
+        android:layout_toRightOf="@+id/btn_1" />
 
     <Button
         android:id="@+id/btn_3"
@@ -48,8 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_toEndOf="@+id/btn_2"
-        android:layout_toRightOf="@+id/btn_2"
-        android:text="间隔透明-加大" />
+        android:text="间隔透明-加大"
+        android:layout_toRightOf="@+id/btn_2" />
 
     <Button
         android:id="@+id/btn_read"
@@ -63,22 +49,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_0"
-        android:layout_toRightOf="@+id/btn_read"
-        android:text="导出图片" />
-
-    <Button
-        android:id="@+id/btn_feng_mian"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_0"
-        android:layout_toRightOf="@+id/btn_run"
-        android:text="导出封面" />
+        android:text="导出图片"
+        android:layout_toRightOf="@+id/btn_read" />
 
     <include
         android:id="@+id/v_bitmap_view"
-        layout="@layout/layout_person_item_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+        layout="@layout/layout_person_item_2"
+        android:layout_centerInParent="true"
+        />
 
 </RelativeLayout>

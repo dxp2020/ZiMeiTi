@@ -35,7 +35,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 抗美援朝的第一批入朝的军是哪几支？
+ * 1950年，志愿军首批入朝的6个军中，哪个军的兵力最多？
  */
 public class RuChaoActivity extends Activity {
 
@@ -56,9 +56,6 @@ public class RuChaoActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_ruchao);
-
-        File file = new File("/mnt/sdcard/dxp2020");
-        file.deleteOnExit();
 
         btn_1 = findViewById(R.id.btn_1);
         btn_2 = findViewById(R.id.btn_2);
@@ -152,7 +149,7 @@ public class RuChaoActivity extends Activity {
 
                 new Thread(() -> savePicture("/mnt/sdcard/dxp2020/" + index + ".png")).start();
             } else if (msg.what == 1) {
-                tv_fengmian.setText("求关注!");
+                tv_fengmian.setText("不朽中華魂!");
                 new Thread(() -> {
                     try {
                         Thread.sleep(2000l);
