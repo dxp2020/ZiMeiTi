@@ -35,7 +35,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 抗美援朝12位志愿军单兵之王，您知道几个？
+ * 朝鲜战场上的12位志愿军单兵之王，您知道几个？
  */
 public class DanBingActivity extends Activity {
 
@@ -56,9 +56,6 @@ public class DanBingActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_danbing);
-
-        File file = new File("/mnt/sdcard/dxp2020");
-        file.deleteOnExit();
 
         btn_1 = findViewById(R.id.btn_1);
         btn_2 = findViewById(R.id.btn_2);
@@ -154,7 +151,7 @@ public class DanBingActivity extends Activity {
 
                 new Thread(() -> savePicture("/mnt/sdcard/dxp2020/" + index + ".png")).start();
             } else if (msg.what == 1) {
-                tv_fengmian.setText("求关注!");
+                tv_fengmian.setText("不朽中華魂!");
                 new Thread(() -> {
                     try {
                         Thread.sleep(2000l);
