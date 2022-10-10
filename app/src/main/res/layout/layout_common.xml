@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_fengmian"
+        android:layout_width="715px"
+        android:layout_height="1080px"
+        android:layout_centerInParent="true"
+        android:background="#000000"
+        android:gravity="center"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:text="盘点世界十大狙击手，冷枪英雄张桃芳排名第几？"
+        android:textColor="#FFFFFF"
+        android:textSize="110px"
+        android:typeface="monospace"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请权限" />
+
+    <Button
+        android:id="@+id/btn_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_0"
+        android:text="切换封面" />
+
+    <Button
+        android:id="@+id/btn_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_0"
+        android:text="读取数据" />
+
+    <Button
+        android:id="@+id/btn_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_0"
+        android:layout_toRightOf="@+id/btn_read"
+        android:text="导出图片" />
+
+    <Button
+        android:id="@+id/btn_export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_0"
+        android:layout_toRightOf="@+id/btn_run"
+        android:text="导出封面" />
+
+
+    <include
+        android:id="@+id/v_bitmap_view"
+        layout="@layout/layout_person_item_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
