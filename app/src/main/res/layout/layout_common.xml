@@ -34,18 +34,10 @@
         android:text="切换封面" />
 
     <Button
-        android:id="@+id/btn_read"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_0"
-        android:text="读取数据" />
-
-    <Button
         android:id="@+id/btn_run"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_0"
-        android:layout_toRightOf="@+id/btn_read"
         android:text="导出图片" />
 
     <Button
@@ -59,7 +51,7 @@
 
     <include
         android:id="@+id/v_bitmap_view"
-        layout="@layout/layout_person_item_4"
+        layout="@layout/layout_common_item_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
