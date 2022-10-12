@@ -21,14 +21,15 @@
             <TextView
                 android:id="@+id/tv_num"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="100px"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="20px"
-                android:layout_marginTop="20px"
-                android:padding="5px"
+                android:layout_marginTop="60px"
+                android:background="#E3502E"
+                android:gravity="center"
+                android:minWidth="80px"
                 android:text="1"
-                android:textColor="#9D3C1B"
-                android:textSize="100px" />
+                android:textColor="#ffffff"
+                android:textSize="80px" />
 
             <TextView
                 android:id="@+id/tv_chen_wei"
