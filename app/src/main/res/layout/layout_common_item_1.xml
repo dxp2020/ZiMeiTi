@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="715px"
+        android:layout_height="1080px">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="710px">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_zhangguofu" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:padding="5px"
+                android:text="1"
+                android:textColor="#9D3C1B"
+                android:textSize="100px" />
+
+            <TextView
+                android:id="@+id/tv_chen_wei"
+                android:layout_width="90px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60px"
+                android:layout_marginRight="20px"
+                android:background="@drawable/shape_red_circle"
+                android:gravity="center"
+                android:text="曾泽生"
+                android:textColor="#ffffff"
+                android:textSize="55px" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_top"
+            android:background="#000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_line1"
+                android:layout_width="match_parent"
+                android:layout_height="125px"
+                android:background="#0339FB"
+                android:gravity="center"
+                android:paddingLeft="15px"
+                android:paddingRight="15px"
+                android:text="志愿军第13兵团"
+                android:textColor="#FFFFFF"
+                android:textSize="70px" />
+
+            <TextView
+                android:id="@+id/tv_line2"
+                android:layout_width="match_parent"
+                android:layout_height="125px"
+                android:background="#E3502E"
+                android:gravity="center"
+                android:paddingLeft="20px"
+                android:text="50军"
+                android:textColor="#FFFFFF"
+                android:textSize="70px" />
+
+            <TextView
+                android:id="@+id/tv_line3"
+                android:layout_width="match_parent"
+                android:layout_height="125px"
+                android:background="#E9D6DC"
+                android:gravity="center"
+                android:paddingLeft="15px"
+                android:paddingRight="15px"
+                android:text="全军5.9万人"
+                android:textColor="#9D3C1B"
+                android:textSize="70px" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

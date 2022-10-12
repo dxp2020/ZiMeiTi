@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="715px"
+        android:layout_height="1080px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="700px">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_zhangguofu" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="60px"
+                android:background="#E3502E"
+                android:gravity="center"
+                android:minWidth="80px"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="80px" />
+
+            <TextView
+                android:id="@+id/tv_chen_wei"
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="60px"
+                android:background="@drawable/shape_red_circle"
+                android:gravity="center"
+                android:text="孤胆英雄"
+                android:textColor="#ffffff"
+                android:textSize="60px" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="220px"
+            android:background="#000000"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_line3"
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="15px"
+                android:paddingRight="15px"
+                android:text="全排战斗7天7夜后仅剩下他自己，他用石块阻击敌军，1人歼敌100余人。"
+                android:textColor="#FFFFFF"
+                android:textSize="50px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_bottom"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_line1"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:gravity="center"
+                android:text="赖永泽"
+                android:textColor="#FFFFFF"
+                android:textSize="60px"
+                android:background="#E3502E"
+                />
+
+            <TextView
+                android:id="@+id/tv_line2"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:gravity="center"
+                android:text="四川绵阳人"
+                android:textColor="#9D3C1B"
+                android:textSize="60px"
+                android:background="#E9D6DC"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
