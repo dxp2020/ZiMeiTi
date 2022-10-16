@@ -152,6 +152,7 @@ public class CommonActivity extends Activity {
 
                 iv_icon.setImageResource(getImageResource(data[0]));
                 tv_num.setText(String.valueOf(index));
+                tv_num.setVisibility(View.GONE);
                 if (TextUtils.isEmpty(data[3])) {
                     tv_chen_wei.setVisibility(View.GONE);
                 } else {
