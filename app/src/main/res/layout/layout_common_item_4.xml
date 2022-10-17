@@ -92,14 +92,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="220px"
                 android:background="#2C2B2C"
-                android:gravity="left|center_vertical"
-                android:paddingTop="10px"
-                android:paddingRight="10px"
-                android:paddingBottom="10px"
-                android:paddingLeft="20px"
+                android:gravity="center"
                 android:text="江西于都人\n开过少将，享年86岁"
                 android:textColor="#ffffff"
-                android:textSize="50px" />
+                android:textSize="55px" />
 
         </LinearLayout>
 
