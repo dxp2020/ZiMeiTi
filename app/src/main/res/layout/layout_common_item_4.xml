@@ -65,7 +65,7 @@
                 android:paddingRight="15px"
                 android:text="第二任（1911~1930）"
                 android:textColor="#BC4030"
-                android:textSize="55px"
+                android:textSize="58px"
                 android:textStyle="bold" />
 
         </LinearLayout>
