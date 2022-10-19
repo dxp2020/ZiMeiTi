@@ -41,6 +41,7 @@
                 android:background="@drawable/shape_red_circle"
                 android:gravity="center"
                 android:text="孤胆英雄"
+                android:paddingBottom="5px"
                 android:textColor="#ffffff"
                 android:textSize="60px" />
 
@@ -85,7 +86,8 @@
                 android:gravity="center"
                 android:text="赖永泽"
                 android:textColor="#FFFFFF"
-                android:textSize="60px" />
+                android:textSize="60px"
+                />
 
             <TextView
                 android:id="@+id/tv_line2"
