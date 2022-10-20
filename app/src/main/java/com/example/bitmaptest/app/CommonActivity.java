@@ -80,7 +80,7 @@ public class CommonActivity extends Activity {
             readInfo();
 
             templateIndex++;
-            templateIndex %= 4;
+            templateIndex %= 5;
             View view = null;
             switch (templateIndex) {
                 case 0:
@@ -94,6 +94,9 @@ public class CommonActivity extends Activity {
                     break;
                 case 3:
                     view = View.inflate(CommonActivity.this, R.layout.layout_common_item_4, null);
+                    break;
+                case 4:
+                    view = View.inflate(CommonActivity.this, R.layout.layout_common_item_5, null);
                     break;
             }
             if (view != null) {
@@ -152,7 +155,7 @@ public class CommonActivity extends Activity {
 
                 iv_icon.setImageResource(getImageResource(data[0]));
                 tv_num.setText(String.valueOf(index));
-                tv_num.setVisibility(View.GONE);
+//                tv_num.setVisibility(View.GONE);
                 if (TextUtils.isEmpty(data[3])) {
                     tv_chen_wei.setVisibility(View.GONE);
                 } else {
