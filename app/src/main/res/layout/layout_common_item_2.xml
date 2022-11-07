@@ -50,7 +50,7 @@
             android:id="@+id/rl_bottom"
             android:layout_width="match_parent"
             android:layout_height="220px"
-            android:background="#b3000000"
+            android:background="#4C4C4C"
             android:gravity="center_horizontal"
             android:layout_alignParentBottom="true"
             android:orientation="vertical">
